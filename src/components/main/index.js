@@ -5,7 +5,11 @@ import Scores from '../../pages/scores';
 import Stats from '../../pages/stats';
 import Classement from '../../pages/classement';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import News from '../../pages/news';
+=======
+import Transfert from '../../pages/transfert';
+>>>>>>> 0e47ec3c336740aad71e8f29637f242e1436544d
 =======
 import Transfert from '../../pages/transfert';
 >>>>>>> 0e47ec3c336740aad71e8f29637f242e1436544d
@@ -21,7 +25,11 @@ const Main = () => {
             <Route path="/stats" element={<Stats />} />
             <Route path="/classement" element={<Classement />} />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <Route path="/news" element={<News />} />
+=======
+            <Route path="/transfert" element={<Transfert />} />
+>>>>>>> 0e47ec3c336740aad71e8f29637f242e1436544d
 =======
             <Route path="/transfert" element={<Transfert />} />
 >>>>>>> 0e47ec3c336740aad71e8f29637f242e1436544d

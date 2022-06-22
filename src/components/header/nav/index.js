@@ -7,7 +7,11 @@ const Nav = () => {
             <Link to='/stats'>Stats</Link>
             <Link to='/classement'>Classement</Link>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <Link to='/news'>News</Link>
+=======
+            <Link to='/transfert'>Transfert</Link>
+>>>>>>> 0e47ec3c336740aad71e8f29637f242e1436544d
 =======
             <Link to='/transfert'>Transfert</Link>
 >>>>>>> 0e47ec3c336740aad71e8f29637f242e1436544d
