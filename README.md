@@ -1,6 +1,6 @@
 # FootGeek
 
-## pour utiliser  
+## pour utiliser sass 
 taper npm run sass
 
 
