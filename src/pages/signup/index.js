@@ -12,26 +12,30 @@ const SignUp = () => {
                     First Name
                 </label>
                 <input type="text" 
-                name="firstname" 
-                placeholder="First Name"/>
+                        name="firstname" 
+                        placeholder="First Name"
+                />
                 <label>
                     Last Name
                 </label>
                 <input type="text"
-                 name="lastname" 
-                 placeholder="Last Name"/>
+                       name="lastname" 
+                       placeholder="Last Name"
+                />
                 <label>
                     Email Address
                 </label>
                 <input type="email" 
-                name="email" 
-                placeholder="Email"/>
+                       name="email" 
+                       placeholder="Email"
+                />
                 <label>
                     Password
                 </label>
                 <input type="password"
-                 name="password" 
-                 placeholder="Password"/>
+                       name="password" 
+                       placeholder="Password"
+                 />
                  <button>
                     Sign Up
                  </button>

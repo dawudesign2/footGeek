@@ -12,19 +12,20 @@ const SignIn = () => {
                     Username
                 </label>
                 <input type="text" 
-                name="username" 
-                placeholder="Username"/>
+                       name="username" 
+                       placeholder="Username"
+                />
                 <label>
                     Password
                 </label>
                 <input type="password"
-                 name="password" 
-                 placeholder="Password"/>
+                       name="password" 
+                       placeholder="Password"
+                />
                  <button>
                     Sign in
                 </button>
             </form>
-             
         </>
     )
 }
