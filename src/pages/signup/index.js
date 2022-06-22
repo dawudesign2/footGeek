@@ -1,4 +1,4 @@
-import React from 'reacyt';
+import React, { useState } from 'react';
 
 const SignUp = () => {
     return(

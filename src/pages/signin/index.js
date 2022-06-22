@@ -3,8 +3,10 @@
 const SignIn = () => {
     return(
         <>
-            <h1>Sign In</h1>*
+            <h1>Sign In</h1>
+
             {/* Création d'un formulaire Sign in avec un username et password */}
+
             <form>
                 <label>
                     Username
@@ -21,7 +23,6 @@ const SignIn = () => {
                  <button>
                     Sign in
                 </button>
-                
             </form>
              
         </>
