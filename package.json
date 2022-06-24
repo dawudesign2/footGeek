@@ -9,6 +9,8 @@
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "nodemon": "^2.0.17",
+    "pg": "^8.7.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
@@ -17,6 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "server": "node backend/index.js",
     "sass": "sass src/sass/app.scss src/index.css --watch",
     "start": "react-scripts start",
     "build": "react-scripts build",
