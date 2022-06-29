@@ -1,22 +1,29 @@
-import axios from 'axios'
+import { useState, useEffect } from 'react'
+
 import Card from '../../components/news/card'
 
 const News = () => {
+    const [info, setInfo] = useState([])
 
-    const search = () => {
-        axios.get("https://newsapi.org/v2/everything?q=psg&from=2022-05-22&sortBy=publishedAt&apiKey=9754d0ca672246ddbb47e77f01f331ce")
-             .then(res => console.log(res.data))
-      }
-      search();
+    useEffect(() => {
+        const url = "https://newsapi.org/v2/everything?domains=sofoot.com&apiKey=9754d0ca672246ddbb47e77f01f331ce";
+        fetch(url)
+            .then((res) => res.json())
+            .then((data) => console.log("useEffect",data) || setInfo(data.articles))
+    }, [])
 
-    return(
+
+
+    return (
         <>
-            <h1>News</h1>
-            <Card />
-            <Card /> 
-            <Card />
-            <Card />
-
+            <h1>Actualités</h1>
+        
+            {
+                info.map((item, i)=> {
+                    return <Card id={i} {...item} />
+                })
+                
+            }
         </>
     )
 }
