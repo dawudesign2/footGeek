@@ -1,26 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
+import { useParams } from 'react-router-dom'
+import infoContext from '../../context/infoContext';
 
 
-export default function Index({ match }) {
-    const [show, setShow] = useState([])
-    console.log(show)
-    useEffect(()=> {
-        const url = "https://newsapi.org/v2/everything?domains=sofoot.com&apiKey=9754d0ca672246ddbb47e77f01f331ce";
-     fetch(url)
-        .then((res) => res.json())
-        .then((data) => console.log(data) || setShow(data.articles[match.params.id]))
-        
-},[])
-
-return (
-    <div>
-        <h1>titlte</h1>
+const Articles = () => {
 
 
-    </div>
+    const info = useContext(infoContext)
+    const { id } = useParams()
+    const data = info.findIndex(obj => obj.publishedAt === id)
 
-)
 
+    return (
+        <>
+            {<h1>{info[data].title}</h1>}
+            {<img src={info[data].urlToImage} alt={info[data].title}/>}
+            {<p>{info[data].description}</p>}            
+        </>
+    )
 }
 
 
+export default Articles
