@@ -10,6 +10,7 @@ const Nav = () => {
             <Link to='/contact'>Contact</Link>
             <Link to='/signin'>Sign In</Link>
             <Link to='/signup'>Sign Up</Link>
+            <Link to='/player'>Mon Joueur</Link>
         </nav>
     );
 }

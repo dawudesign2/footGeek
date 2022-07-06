@@ -12,6 +12,7 @@ import Articles from '../../pages/articles';
 import Contact from '../../pages/contact';
 import SignIn from '../../pages/signin';
 import SignUp from '../../pages/signup';
+import Player from '../../pages/player';
 
 const Main = () => {
     let match = useMatch({
@@ -33,12 +34,13 @@ const Main = () => {
             <Route path="/" element={<Home />} />
             <Route path="/scores" element={<Scores />} />
             <Route path="/stats" element={<Stats />} />
-            <Route path="/classement" element={<Classement />} />\quests
+            <Route path="/classement" element={<Classement />} />
             <Route path="/news" element={<News />} />
             <Route path="/articles/:id" element={<Articles match={match} />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/player" element={<Player />} />
         </Routes>
         </infoContext.Provider>
     )
