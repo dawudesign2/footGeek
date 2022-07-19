@@ -13,9 +13,11 @@ const Articles = () => {
 
     return (
         <>
-            {<h1>{info[data].title}</h1>}
+        <div className='seb_articlepage__card'>
+            {<h1 className='seb_articlepage__title'>{info[data].title}</h1>}
             {<img src={info[data].urlToImage} alt={info[data].title}/>}
-            {<p>{info[data].description}</p>}            
+            {<p className='seb_articlepage__desc'>{info[data].description}</p>}            
+            </div>
         </>
     )
 }

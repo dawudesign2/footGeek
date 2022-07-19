@@ -13,7 +13,7 @@ const News = () => {
 
     return (
         <>
-            <h1>Actualités</h1>
+            <h1 className='seb_pagetitle'>Actualités</h1>
         
             {
                 info.map((item,i)=> {
