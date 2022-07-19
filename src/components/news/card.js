@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom"
 
 
-const Card = (props) => {
+const Card = ({id, title, urlToImage, description, publishedAt}) => {
 
     
     return(
        <div className="seb_card">
-       <Link className="seb_link" to={`/articles/${props.publishedAt}`}>
-        <article className="seb_article" id={props.id}>
-        <h1 className="seb_article__title">{props.title}</h1>
-            <img src={props.urlToImage} alt={props.title}/>
-          <h4 className="seb_article__desc">{props.description}</h4>
+       <Link className="seb_link" to={`/articles/${publishedAt}`}>
+        <article className="seb_article" id={id}>
+        <h1 className="seb_article__title">{title}</h1>
+            <img src={urlToImage} alt={title}/>
+          <h4 className="seb_article__desc">{description}</h4>
           <button className="seb_article__btn">Voir</button>
         </article>
        
